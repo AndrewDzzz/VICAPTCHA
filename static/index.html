@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illusion CAPTCHA</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="brand">
+          <span class="logo">👁️</span>
+          <div>
+            <div class="title">IllusionCAPTCHA</div>
+            <div class="subtitle">Interactive Demo</div>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="refreshBtn" class="icon-btn" title="New challenge">⟳</button>
+        </div>
+      </header>
+
+      <main>
+        <h2 id="prompt" class="prompt">Loading...</h2>
+        <div id="grid" class="grid"></div>
+        <button id="submitBtn" class="submit" disabled>Submit</button>
+        <div id="progress" class="progress" aria-hidden="true">
+          <div class="bar"></div>
+          <span id="progressText">Verifying...</span>
+        </div>
+        <div id="message" class="message"></div>
+      </main>
+    </div>
+
+    <script src="/static/main.js"></script>
+  </body>
+  </html>
+
+
